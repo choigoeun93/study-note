@@ -1,0 +1,270 @@
+body, #root, .container {
+  background: #fff;
+  font-family: 'Pretendard', 'Noto Sans KR', Arial, sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #eee;
+  background: #fff;
+}
+
+.date-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: 1.2rem;
+}
+.date-btn {
+  background: #f5f7fa;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  width: 2.1em;
+  height: 2.1em;
+  cursor: pointer;
+  color: #4e8cff;
+  transition: background 0.15s;
+}
+.date-btn:hover {
+  background: #e3eefe;
+}
+.date-input {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 0.3em 0.7em;
+  font-size: 1em;
+  background: #fafbfc;
+}
+
+.page-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.page-tab {
+  background: #f5f7fa;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  padding: 0.5em 1.2em;
+  font-size: 1em;
+  color: #888;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.page-tab.active {
+  background: #fff;
+  color: #222;
+  font-weight: 600;
+  border-bottom: 2px solid #4e8cff;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1.08rem;
+  padding: 0.3rem 0.2rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.check-item input[type="checkbox"] {
+  width: 1.1em;
+  height: 1.1em;
+  accent-color: #4e8cff;
+}
+.icon {
+  font-size: 1.3em;
+  min-width: 1.3em;
+}
+
+.record-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.record-section h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+.record-input {
+  width: 100%;
+  min-height: 2.5em;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 0.7em;
+  font-size: 1em;
+  resize: vertical;
+  background: #fafbfc;
+  margin-bottom: 0.2em;
+  box-sizing: border-box;
+}
+.record-input:focus {
+  outline: 1.5px solid #4e8cff33;
+  background: #fff;
+}
+
+.save-btn {
+  margin-top: 0.5em;
+  padding: 0.5em 1.2em;
+  background: #4e8cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.save-btn:disabled {
+  background: #bcd6fa;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.stats-section {
+  margin-top: 1.5rem;
+}
+.stats-month-picker {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  justify-content: center;
+}
+.stats-month-picker input[type="month"] {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 0.3em 0.7em;
+  font-size: 1em;
+  background: #fafbfc;
+}
+.stats-total-days {
+  color: #888;
+  font-size: 0.98em;
+}
+.stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.stats-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  font-size: 1.08rem;
+  padding: 0.5em 0.2em;
+  border-radius: 6px;
+  background: #f8fafd;
+  justify-content: space-between;
+}
+.stats-percent {
+  font-weight: 600;
+  color: #4e8cff;
+  min-width: 2.5em;
+  text-align: right;
+}
+
+.checklist-add-row {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+.checklist-add-input {
+  flex: 1;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 0.5em 0.8em;
+  font-size: 1em;
+  background: #fafbfc;
+}
+.checklist-add-btn {
+  background: #6fcf97;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.5em 1.1em;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.checklist-add-btn:disabled {
+  background: #c8f5e0;
+  color: #fff;
+  cursor: not-allowed;
+}
+.checklist-del-btn {
+  background: none;
+  border: none;
+  color: #e57373;
+  font-size: 1.1em;
+  margin-left: 0.5em;
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+.checklist-del-btn:hover {
+  background: #ffeaea;
+}
+
+.encourage-modal-bg {
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.encourage-modal {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px #0001;
+  padding: 2em 1.5em 1.2em 1.5em;
+  min-width: 220px;
+  max-width: 90vw;
+  text-align: center;
+  animation: popin 0.2s;
+}
+@keyframes popin {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.encourage-msg {
+  font-size: 1.15em;
+  margin-bottom: 1.2em;
+  color: #4e8cff;
+  font-weight: 600;
+}
+.encourage-close-btn {
+  background: #4e8cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.encourage-close-btn:hover {
+  background: #2563eb;
+}
